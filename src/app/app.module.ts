@@ -5,15 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ToastrModule  } from 'ngx-toastr';
+import { LayoutModule } from './layouts/public/layout.module';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
     NgbModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

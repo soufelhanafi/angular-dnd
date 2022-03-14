@@ -1,0 +1,23 @@
+.main-container {
+    background-image: url("https://m.psecn.photoshelter.com/img-get/I0000eAfqkbA2.64/s/1200/I0000eAfqkbA2.64.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .navbar {
+        position: fixed;
+        width: 100%;
+        background-color: transparent;
+        transition: opacity 0.3s;
+        opacity: 1;
+    }
+    .navbar-open {
+        @media screen and (max-width:992px) {
+            background-color: white;
+            
+        }
+    }
+    &_content {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 40px;
+    }
+}
